@@ -1,0 +1,143 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding-top: 200px;
+    padding-bottom: 120px;
+}
+
+
+body{
+    background-color: rgb(9, 44, 75); 
+}
+
+
+header{
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(19, 18, 22);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+
+}
+
+header nav{
+    margin-left: 1200px;
+    display: flex;
+    gap: 20px;
+}
+
+footer{
+    justify-content: center;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(19, 18, 22);
+    height: 80px;
+    width: 100%;
+
+}
+
+
+header h1{
+    margin-left: 80px;
+}
+
+#container{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+
+
+#container section p{
+    margin: 15px;
+}
+
+
+#container section h2{
+    margin: 20px;
+}
+
+section li{
+    list-style-type: none;
+}
+
+#contacto{
+    border: solid white 1px;
+    
+    width: 1100px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgb(19, 18, 22);
+    padding-bottom: 200px;
+}
+
+#contacto h2{
+    margin: 40px;
+}
+
+section {
+    flex: 0 1 45%;
+    border: solid white 1px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(19, 18, 22);
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: subirFade;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.6s;
+}
+
+
+@keyframes subirFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input {
+    font-size: 20px;
+    color: black;
+    width: 700px;
+    height: 30px;
+}
+
+form{
+    margin-left: 200px;
+    font-size: 20px;
+    display: grid;
+    gap:10px;
+    justify-items: start; 
+    height: 300px;
+}
+
+textarea{
+    font-size: 20px;
+    color: black;
+    height: 100px;
+    width: 700px;
+    resize: none;
+}
+
